@@ -1,0 +1,30 @@
+.App-Container {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.App-Content {
+    background-color: #393f4f;
+    height: calc(100% - 85px); 
+    width: 100%;
+    padding: 30px 30px;
+    color: #ffffff;
+}
+.App-Content .Page-Title {
+    color: #ffffff;
+    font-weight: 300 !important;
+    float: left;
+    margin-right: 60px;
+}
+.App-Content .Header-Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.App-Content .Header-Content svg {
+    font-size: 20px;
+}
+.App-Content .Body-Content {
+}

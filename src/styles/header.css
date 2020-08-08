@@ -1,0 +1,48 @@
+.App-Header {
+    width: 100% !important;
+    height: 85px !important;
+    background-color: #5a6378 !important;
+}
+.App-Header .Header-Right {
+    float: right;
+}
+.App-Header .Header-Right.Header-Inline {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.App-Header .Header-Right.Header-Inline form {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.App-Header .Header-Right.Header-Inline form input {
+    border-radius: 20px;
+    height: 35px !important;
+    background-color: #393f4f;
+    border: none;
+    padding-top: 5px;
+    padding-left: 35px !important;
+    color: #ffffff;
+}
+.App-Header .Header-Right.Header-Inline form input:focus {
+    box-shadow: none;
+}
+.App-Header .Header-Right.Header-Inline form svg {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.App-Header .Header-Avatar {
+    width: 40px !important;
+    height: 40px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+}

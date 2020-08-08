@@ -1,0 +1,37 @@
+@media screen and (min-widht: 600px)
+{
+    .App-NavbarBrand {
+        display: none;
+    }
+}
+
+.App-Sidebar {
+    padding: 0 !important;
+}
+.App-SidebarNav {
+    width: 100% !important;
+}
+.App-SidebarNav a {
+    padding: 30px 0px 30px 20px !important;
+    font-size: 10pt !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #b9b9bf;
+}
+.App-SidebarNav a:last-child {
+    border-bottom: none !important;
+}
+.App-SidebarNav a svg {
+    font-size: 15px !important;
+    margin-right: 35px;
+    align-self: center;
+    margin-top: -5px;
+}
+.App-SidebarNav a.Active {
+    color: #ffffff !important;
+    background-color: #ff6b6b;
+    font-weight: 600;
+}
+.App-SidebarNav a.Active {
+    border-bottom: none !important;
+}

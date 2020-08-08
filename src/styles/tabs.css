@@ -1,0 +1,17 @@
+.App-TabLink {
+    border-bottom: none !important;
+}
+.App-TabLink a {
+    color: #a2aabb !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.App-TabLink a.active {
+    background-color: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+.App-TabLink a:focus, .App-TabLink a:hover, .App-TabLink a:visited, .App-TabLink a:link {
+    border: none !important;
+    outline: 0 !important;
+}
