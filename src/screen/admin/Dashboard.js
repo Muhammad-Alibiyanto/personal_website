@@ -6,13 +6,35 @@ import HeaderComponent from '../../components/HeaderComponent';
 import '../../styles/tabs.css';
 import { BsGear } from 'react-icons/bs';
 import ChartComponent from '../../components/ChartComponent';
+import { PieChart, Pie } from 'recharts';
 
 class AdminDashboard extends React.Component {
     constructor() {
         super();
         this.state = {
-            selectedTab: 0
+            selectedTab: 0,
+            data: [
+                {name: "ayam", value: 100, cx: 25, cy: 50},
+                {name: "ayam", value: 100, cx: 25, cy: 50},
+                {name: "ayam", value: 100, cx: 25, cy: 50},
+                {name: "ayam", value: 100, cx: 25, cy: 50},
+                {name: "ayam", value: 100, cx: 25, cy: 50},
+                {name: "ayam", value: 100, cx: 25, cy: 50},
+            ],
+            chart_width: (window.innerWidth - (window.innerWidth * 22 / 100)) * 16.5 / 100
         };
+
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+        this.browserRef = React.createRef();
+    }
+
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions() {
+        this.setState({ chart_width: (window.innerWidth - (window.innerWidth * 22 / 100)) * 16.5 / 100 });
     }
 
     handleChangeTab = (key) => {
@@ -53,6 +75,41 @@ class AdminDashboard extends React.Component {
                                 :
                                     <p>Monthly</p>
                                 }
+
+                                <Row noGutters style={{ marginTop: '40px', justifyContent: 'center' }}>
+                                    <Col xs={12} sm={12} md={2} lg={2} offset={2}>
+                                        <div className="Resume">
+                                            <p className="Resume-Title">Browser</p>
+                                            <div className="Resume-Progress">
+                                                <p className="Resume-ProgressInner">76.26%</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col xs={12} sm={12} md={6} lg={6}>
+                                        <div className="Resume">
+                                            <p className="Resume-Title">Summary</p>
+                                            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                                <div className="Resume-Progress Secondary">
+                                                    <p className="Resume-ProgressInner">76.26%</p>
+                                                </div>
+                                                <div className="Resume-Progress Secondary">
+                                                    <p className="Resume-ProgressInner">76.26%</p>
+                                                </div>
+                                                <div className="Resume-Progress Secondary">
+                                                    <p className="Resume-ProgressInner">76.26%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col xs={12} sm={12} md={2} lg={2}>
+                                        <div className="Resume">
+                                            <p className="Resume-Title">System</p>
+                                            <div className="Resume-Progress">
+                                                <p className="Resume-ProgressInner">76.26%</p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                </Row>
                             </div>
                         </div>
                     </Col>

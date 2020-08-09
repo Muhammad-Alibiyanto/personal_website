@@ -40,7 +40,6 @@ class ChartComponent extends React.Component
         return(
             <LineChart height={400} width={this.state.width} data={this.state.data}>
                 <CartesianGrid strokeDasharray="0 0" stroke="#5a6378" />
-                <Tooltip />
                 <XAxis dataKey="name" />
                 <Line type="monotone" dataKey="uv" stroke="#8884d8" />
                 <Line type="monotone" dataKey="pv" stroke="#82ca9d" />

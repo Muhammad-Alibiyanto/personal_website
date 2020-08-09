@@ -1,3 +1,30 @@
 .App-Chart {
     width: 500px
 }
+.Resume-Title {
+    text-align: center;
+    font-weight: 400;
+}
+.Resume-Progress {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    border: double 8px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#393f4f, #393f4f), radial-gradient(circle at top left, #393f4f 18%,#ff6b6b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    justify-content: center;
+    align-items: center;
+}
+.Resume-Progress.Secondary {
+    background-image: linear-gradient(#393f4f, #393f4f), radial-gradient(circle at top left, #393f4f 18%,#6582ac);
+}
+.Resume-ProgressInner {
+    font-weight: 400;
+    margin-top: 15px;
+    font-size: 20px;
+}
